@@ -30,14 +30,14 @@ This guide will help you set up and run the service locally. It also explains ho
 
 Download all necessary requirements via:
   ```sh
-  pip install -r requirements.txt
+    pip install -r src/requirements.txt
   ```
 ### Test Example
 To run a minimal example, execute:
 ```sh
 python test/test.py
 ```
-This initializes a service defined in `test/service.py` and runs the service locally. 
+This initializes a service defined in `src/service.py` and runs the service locally.
 
 In this example a dummy model is used which detects green colors. The code demonstrates how the data is loaded, processed by the model and saved.
 The test data must be located in `test/action/input` and 
@@ -111,7 +111,7 @@ For local testing the output directory is set to the folder `test/action/output`
 Note that you can save files of any format during the `process_data` method into `os.path.join(self.action_path, output)` independently of the self.save_data method. 
 
 
-To get started you can modify the code in `test/service.py`.
+To get started you can modify the code in `src/service.py`.
 
 
 <!-- TODO:
